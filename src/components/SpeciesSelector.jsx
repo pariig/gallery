@@ -28,7 +28,7 @@ const SpeciesSelector = ({ selectedSpecies, setSelectedSpecies }) => {
                     menu: (base) => ({ ...base, backgroundColor: "#3a3a4d" }),
                     option: (provided, state) => ({
                         ...provided,
-                        backgroundColor: state.isFocused ? "#4a4a6d" : "#3a3a4d",
+                        backgroundColor: state.isFocused ? "#0d2b5d" : "#3a3a4d",
                         color: "#fff",
                     }),
                 }}
