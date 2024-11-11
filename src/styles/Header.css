@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-header {
+    background-color: #e3e3e3;
+    color: #1e2a4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    	
+    padding: 0.5rem 1rem;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .back-arrow {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-image {
+    border-radius: 9999px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover; /* Ensures the logo fits well within its circular frame */
+  }
+  
+  .logo-text {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1e2a4a; /* Matches the color scheme */
+  }
+  
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .main-nav a {
+    color: #1e2a4a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+  
+  .main-nav a:hover {
+    color: #bfdbfe;
+  }
+  
+  .bell-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: #1e2a4a;
+  }
+  
+  .profile-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #9ca3af;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  
+  .sub-header {
+    background-color: #1e2a4a;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links span {
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .nav-links span.active {
+    font-weight: 600;
+    border-bottom: 2px solid #bfdbfe; /* Adds emphasis to the active tab */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-nav {
+      gap: 1rem;
+    }
+    
+    .nav-links {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .logo-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .main-nav a:not(:last-child) {
+      display: none;
+    }
+    
+    .header-left {
+      gap: 0.5rem;
+    }
+    
+    .logo-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo-text {
+      font-size: 0.9rem;
+    }
+  }

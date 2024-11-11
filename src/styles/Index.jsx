@@ -3,7 +3,6 @@ import DateRangePicker from "./components/DateRangePicker";
 import SpeciesSelector from "./components/SpeciesSelector";
 import RangeSlider from "./components/RangeSlider";
 import "./styles/FilterSidebar.css";
-import Header from './components/Header'; // Import Header component
 
 
 const App = () => {
@@ -22,9 +21,6 @@ const App = () => {
   const [depthRange, setDepthRange] = useState([0, 500]);
 
   return (
-    <div className="app-container"> {/* Wrap the entire content in a container */}
-      <Header /> {/* Render Header component */}
-
     <div className="filter-sidebar">
       <h3>Filter Options</h3>
 
@@ -67,9 +63,7 @@ const App = () => {
         unit="m"
       />
     </div>
-    </div>
   );
-  
 };
 
 export default App;
